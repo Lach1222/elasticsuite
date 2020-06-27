@@ -43,7 +43,7 @@ class Attribute extends AbstractRenderer
 
         $jsLayoutConfig = [
             'component'           => self::JS_COMPONENT,
-            'maxSize'             => (int) $this->getFilter()->getAttributeModel()->getFacetMaxSize(),
+            /*'maxSize'             => (int) $this->getFilter()->getAttributeModel()->getFacetMaxSize(),*/
             'displayProductCount' => (bool) $this->displayProductCount(),
             'hasMoreItems'        => (bool) $this->getFilter()->hasMoreItems(),
             'ajaxLoadUrl'         => $this->getAjaxLoadUrl(),
